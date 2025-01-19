@@ -1,3 +1,46 @@
+
+
+
+let lastTouchY = 0;
+
+document.addEventListener('touchstart', (event) => {
+  lastTouchY = event.touches[0].clientY;
+});
+
+document.addEventListener('touchend', (event) => {
+  const swipeDistance = event.changedTouches[0].clientY - lastTouchY;
+
+  // If user swipes down a significant amount (e.g., 50px)
+  if (swipeDistance > 50) {
+    // Show the browser search bar (through scroll interaction)
+    document.body.style.paddingTop = '20px'; // adjusts to page style (smooth reveal)
+    window.scrollTo(0, 1); // try to trigger reappearance of address bar (some browsers require scroll action)
+  } else {
+    // Ensure the content behaves the same, hiding address bar (when at top)
+    document.body.style.paddingTop = '0px';
+  }
+});
+
+window.addEventListener('scroll', function() {
+  // Simulate behavior for browsers that handle hide/show the search bar by scroll
+  if (document.documentElement.scrollTop <= 0) {
+    document.body.style.paddingTop = '0px';  // Keep address bar hidden
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const video = document.getElementById("camera");
 const captureButton = document.getElementById("capture");
 const switchButton = document.getElementById("switch-camera");
