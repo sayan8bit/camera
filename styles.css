@@ -194,10 +194,11 @@ body {
 @media (max-width: 480px) {
   /* Resize buttons further */
   .button-container button {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     font-size: 14px;
-        margin-buttom: 50px;
+        margin-buttom: 150px;
+    gap: 100px;
 
   }
 
