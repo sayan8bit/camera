@@ -161,8 +161,8 @@ body {
 @media (max-width: 768px) {
   /* Resize buttons for smaller screens */
   .button-container button {
-    width: 10vh;
-    height: 10vh;
+    width: 20vh;
+    height: 20vh;
     font-size: 20px;
 /*     ss */
     margin-buttom: 5vh;
