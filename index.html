@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="camera-container">
+      <video id="camera" autoplay></video>
+      <div class="button-container">
+        <button id="preview"></button>
+        <button id="capture"></button>
+        <button id="switch-camera">⇌</button>
+      </div>
+    </div>
+
+    <div class="preview-container">
+      <button id="back-button">🔙 Back</button>
+      <h2>Captured Images</h2>
+      <div id="gallery"></div>
+      <button id="clear-all">🗑️ Clear All</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
