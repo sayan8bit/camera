@@ -155,3 +155,47 @@ body {
 ::-webkit-scrollbar-track {
   background-color: #333;
 }
+
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  /* Resize buttons for smaller screens */
+  .button-container button {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  #capture {
+    border: 2px solid #fff; /* Adjust button border for smaller size */
+  }
+
+  /* Reduce gallery image size */
+  .preview-image {
+    width: 45%; /* Two images per row on small screens */
+  }
+
+  /* Adjust preview and other text sizes */
+  body {
+    font-size: 14px;
+  }
+
+  /* Scrollbar Size for Smaller Screens */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+}
+
+/* Ultra-small screens */
+@media (max-width: 480px) {
+  /* Resize buttons further */
+  .button-container button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .preview-image {
+    width: 48%; /* Fit two images comfortably */
+  }
+}
