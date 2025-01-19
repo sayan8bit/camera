@@ -200,6 +200,7 @@ body {
   }
 
   .preview-image {
-    width: 95%; /* Fit two images comfortably */
+    height:90%
+    width: 90%; /* Fit two images comfortably */
   }
 }
