@@ -179,6 +179,7 @@ body {
 
   /* Adjust preview and other text sizes */
   body {
+    height:95vh;
     font-size: 14px;
   }
 
