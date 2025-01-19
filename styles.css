@@ -194,9 +194,11 @@ body {
 @media (max-width: 480px) {
   /* Resize buttons further */
   .button-container button {
-    width: 10vw;
-    height: 10vw;
+    width: 10vh;
+    height: 10vh;
     font-size: 14px;
+        margin-buttom: 5vh;
+
   }
 
   .preview-image {
