@@ -161,11 +161,11 @@ body {
 @media (max-width: 768px) {
   /* Resize buttons for smaller screens */
   .button-container button {
-    width: 100px;
-    height: 100px;
+    width: 5vh;
+    height: 5vh;
     font-size: 20px;
 /*     ss */
-    margin-buttom: 20px;
+    margin-buttom: 2vh;
   }
 
   #capture {
