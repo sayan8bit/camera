@@ -174,7 +174,8 @@ body {
 
   /* Reduce gallery image size */
   .preview-image {
-    width: 45%; /* Two images per row on small screens */
+    height: 95%;
+    width: 95%; /* Two images per row on small screens */
   }
 
   /* Adjust preview and other text sizes */
